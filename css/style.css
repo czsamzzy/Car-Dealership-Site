@@ -5,6 +5,7 @@ body{
   background-color: #262851;
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
+  overflow: hidden;
 }
  .navbar{
    padding: 40px 0px;
@@ -102,29 +103,29 @@ section.whole-car-view .car-details{
 }
 
 section.whole-car-view .car-details h1.car-name{
-  font-size: 80px;
+  font-size: 45px;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 20px;
-  line-height: 100px;
+  line-height: 75px;
   color: #d71758;
 }
 
 section.whole-car-view .car-details h1.car-name span{
-  font-size: 130px;
+  font-size: 70px;
   color: #fff;
 }
 
 section.whole-car-view .car-details p.about-car{
   font-size: 14px;
-  width: 60%;
+  width: 70%;
   line-height: 20px;
   margin-bottom: 20px;
 }
 
 section.whole-car-view .car-details h4.production-year{
   font-size: 16px;
-  line-height: 20px;
+  line-height: 30px;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 20px;
 }
@@ -208,6 +209,72 @@ section.whole-car-view .car-details a.btn-discover:hover:after {
   0% {background-color: rgba(255, 255, 255, 0.20);}
   100%{background-color: #fff;}
 }
+
+
+section.whole-car-view .car-pic{
+  position: relative;
+  z-index: 3;
+  width: 550px;
+  left: 150px; top: 40px;
+}
+
+section.whole-car-view .car-pic img{
+  max-width: 500px;
+}
+
+section.whole-car-view .navigate{
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+  float: right;
+  margin-left: -100px;
+}
+
+section.whole-car-view .navigate button{
+  color: #fff;
+  height: 50px; width: 50px;
+  border-radius: 50%;
+  background-color: #4b4c68;
+  border: 1px solid #4b4c68;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  margin: 10px;
+}
+
+section.whole-car-view .navigate button:hover{
+  color: #d71758;
+  background-color: #fff;
+  border: 1px solid #4b4c68;
+}
+
+section.whole-car-view .navigate .swiper-button-next,
+.swiper-button-prev{
+  background-image: none;
+  position: static;
+}
+
+.stripe{
+  height: 60px;
+  position: absolute;
+  background-color: #fea500;
+  bottom: 200px;
+  left: 0;
+  z-index: -1;
+
+}
+
+.one{
+  width: 120%;
+  transform: rotate(155deg);
+}
+
+.two{
+  width: 145%;
+  transform: rotate(155deg);
+}
+
+
+
 
 
 
