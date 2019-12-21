@@ -333,11 +333,46 @@ section.whole-car-view .navigate .swiper-button-next,
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
+  body{
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .stripe, 
+  .year{
+    opacity: 0;
+  }
+
+  section.whole-car-view .car-pic{
+    width: 100vw;
+    left: 0px; top: 40px;
+  }
+  
+
+  
+
+  
+
+
+
+
+
+
+
   }
 @media (max-width: 768px) {
   
 }
 @media (max-width: 576px) {
+
+  section.whole-car-view .car-pic img{
+    max-width: 90vw;
+  }
+
+  section.whole-car-view .navigate{
+    float: none;
+    margin-left: 0px;
+  }
   
 }
 
